@@ -8,7 +8,7 @@ The `Tangokoto` API which maintained by [Mountain & River Online Judge](https://
 ### How to use it in terminal?
 Just copy this to your `.bashrc` or `.zshrc` and more.
 ```bash
-echo `curl 'https://api.imvictor.tech/php-api/v5/mroj/hitokoto?plain=1' 2> /dev/null`
+echo `curl 'https://api.imvictor.tech/php-api/v7/tangokoto?plain=1' 2> /dev/null`
 ```
 
 ### How to deploy it to my blog.
@@ -17,7 +17,7 @@ If your site is built with `jQuery`, you can use this to anywhere you what to ge
 ```html
 <div class="ui centered inline loader" id="hitokoto-loader"></div>
 <script>
-  $.get('https://api.imvictor.tech/php-api/v5/mroj/hitokoto', function (data) {
+  $.get('https://api.imvictor.tech/php-api/v7/tangokoto', function (data) {
     if (typeof data === 'string') data = JSON.parse(data);
     $('#hitokoto-content').css('display', '').text(data.hitokoto);
     if (data.from) {
