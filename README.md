@@ -28,3 +28,4 @@ If your site is built with `jQuery`, you can use this to anywhere you what to ge
 <div style="font-size: 1em; line-height: 1.5em;" id="hitokoto-content"></div>
 <div style="text-align: right; margin-top: 15px; font-size: 0.9em; color: rgb(102, 102, 102);" id="hitokoto-from"></div>
 ```
+If your site is built without `jQuery`, we also provide a external dynamic JavaScript, just import it and call `Tangokoto()` where you want Tangokoto to be shown. The url is `https://api.imvictor.tech/php-api/v7/tangokoto?js=1`
