@@ -3,7 +3,7 @@ A hitokoto-like collection of Mr.Tang's .
 `master` branch and API are maintained by [Mountain & River Online Judge](https://mr.imvictor.tech/).
 ## Pull Request
 It's recommended to make a pull request when you just heard of a new quotation of Mr.Tang's.  
-The `Tangokoto` API which maintained by [Mountain & River Online Judge](https://mr.imvictor.tech/) will sync it every 24 hours or manually.
+The `Tangokoto` API which maintained by [Mountain & River Online Judge](https://mr.imvictor.tech/) will try to sync Tangokoto database with this repository every 30 minutes or manually.
 ## Usage
 ### How to use it in terminal?
 Just copy this to your `.bashrc` or `.zshrc` and more.
