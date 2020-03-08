@@ -1,0 +1,11 @@
+                               LICENSES
+
+  The following components are licensed under WTFPL:
+    └── src/
+  whose license file could be found at `src/LICENSE`.
+
+  Since commit `09f88dd`, the Tangokoto data has been licensed under GNU 
+  Affero Public License 3.0, which could be found at `LICENSE_txt`.
+  Files licensed under AGPL-3.0:
+    └── * (without all components licensed under other licenses.)
+
