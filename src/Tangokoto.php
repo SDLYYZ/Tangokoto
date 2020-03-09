@@ -3,7 +3,7 @@ $tangokoto = file("**/Tangokoto.txt"); // [Type: Array] Now the datasize is very
 $author = "唐老师";    // Mr.Tang
 $length = sizeof($tangokoto);   // Get length of Tangokoto array
 $randid = rand() % $length;     // Get random id
-$index = array_key_exists("id", $_GET) ? ( intval($_GET['id']) >= $length ? $randid : intval($_GET['id']) ) : $randid;  // determine final id to output (if GET parameter 'id' isn't valid, use the random id).
+$index = array_key_exists("id", $_GET) ? ( (intval($_GET['id']) >= $length || (intval($_GET['id']) < 0) ? $randid : intval($_GET['id']) ) : $randid;  // determine final id to output (if GET parameter 'id' isn't valid, use the random id).
 $outputRaw = rtrim($tangokoto[$index]); // set outputRaw and do trimming
 $json = json_encode( array( 'id' => $index, 'hitokoto' => $outputRaw, 'from' => $author ) ); // encode json
 $type = array_key_exists("type", $_GET) ? $_GET['type'] : "json";   // determine the type to output (default is json)
