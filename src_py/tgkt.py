@@ -25,7 +25,7 @@ with open(file_path, "r", encoding="utf-8") as file:
 author = "唐老师"
 length = len(tangokoto)
 
-@app.route('/pytangokoto', methods=['GET'])
+@app.route('/tangokoto', methods=['GET'])
 def get_tangokoto():
     randid = random.randint(0, length - 1)
     index = int(request.args.get('id', randid))
