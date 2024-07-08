@@ -1,5 +1,5 @@
 <?php
-$tangokoto = file("**/Tangokoto.txt"); // [Type: Array] Now the datasize is very small. It's OK to use file(). 
+$tangokoto = file("Tangokoto.txt"); // [Type: Array] Now the datasize is very small. It's OK to use file(). 
 $author = "唐老师";    // Mr.Tang
 $length = sizeof($tangokoto);   // Get length of Tangokoto array
 $randid = rand() % $length;     // Get random id
