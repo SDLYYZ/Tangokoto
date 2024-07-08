@@ -1,5 +1,5 @@
 <?php
-$tangokoto = @file("Tangokoto.txt"); // [Type: Array] Now the datasize is very small. It's OK to use file(). 
+$tangokoto = @file("../Tangokoto.txt"); // [Type: Array] Now the datasize is very small. It's OK to use file(). 
 if ($tangokoto === false) {
     die("无法读取文件");
 }
@@ -16,7 +16,7 @@ $outputRaw = rtrim($tangokoto[$index]); // set outputRaw and do trimming
 
 $json = json_encode(array('id' => $index, 'hitokoto' => $outputRaw, 'from' => $author)); // encode json
 if ($json === false) {
-    die("编码失败");
+    die("JSON 编码失败");
 }
 
 $type = isset($type) ? $type : "json";   // determine the type to output (default is json)
